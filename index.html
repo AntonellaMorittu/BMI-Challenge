@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+  <script>
+    x = 3;
+  </script>
+  <script src="http://example.com/script.js"></script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; URL=http://example.com/noscript.html"/>
+  </noscript>
   <head>
     <meta charset="utf-8">
     <title> BMI Calculator </title>
@@ -18,16 +25,16 @@
       <span id="display_message"></span>
     </div>
     <script type="text/javascript">
-  $(document).ready(function () {
-    $('#calculate').click(function () {
-      var w = parseFloat($('#weight').val());
-      var h = parseFloat($('#height').val());
-      var person = new Person({weight: w, height: h});
-      person.calculate_bmi();
-      $('#display_value').html('Your BMI is ' + person.bmiValue);
-      $('#display_message').html('and you are '+ person.bmiMessage);
-    });
-  });
-</script>
+      $(document).ready(function () {
+        $('#calculate').click(function () {
+          var w = parseFloat($('#weight').val());
+          var h = parseFloat($('#height').val());
+          var person = new Person({weight: w, height: h});
+          person.calculate_bmi();
+          $('#display_value').html('Your BMI is ' + person.bmiValue);
+          $('#display_message').html('and you are '+ person.bmiMessage);
+        });
+      });
+    </script>
   </body>
 </html>
