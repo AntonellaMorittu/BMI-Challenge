@@ -9,12 +9,12 @@ describe("BMICalculator", function() {
   });
 
   it("calculates BMI for a person using metric method", function() {
-    calculator.metric_bmi(person);
+    calculator.metric_bmi(person_metric);
     expect(person_metric.bmiValue).toEqual(26.01);
   });
 
   it("calculates BMI for a person using imperial method", function() {
-    calculator.imperial_bmi(person);
+    calculator.imperial_bmi(person_imperial);
     expect(person_imperial.bmiValue).toEqual(26.01);
   });
 });
