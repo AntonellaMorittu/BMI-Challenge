@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <script>
-    x = 3;
-  </script>
-  <script src="http://example.com/script.js"></script>
-  <noscript>
-    <meta http-equiv="refresh" content="0; URL=http://example.com/noscript.html"/>
-  </noscript>
   <head>
     <meta charset="utf-8">
     <title> BMI Calculator </title>
@@ -21,15 +14,10 @@
       <input type="button" id="calculate" value="Calculate">
     </form>
 
-    <label class="container">One
-      <input type="checkbox" checked="checked">
-      <span class="checkmark"></span>
-    </label>
-
-    <label class="container">Two
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
+    <select id = "dropdown-selection">
+      <option value="imperial">Imperial Measurements</option>
+      <option value="metric">Metric Measurements</option>
+    </select>
 
     <div>
       <span id="display_value"></span>
@@ -41,9 +29,16 @@
           var w = parseFloat($('#weight').val());
           var h = parseFloat($('#height').val());
           var person = new Person({weight: w, height: h});
-          person.calculate_bmi();
-          $('#display_value').html('Your BMI is ' + person.bmiValue);
-          $('#display_message').html('and you are '+ person.bmiMessage);
+          var answer = document.getElementById('dropdown-selection').value;
+           if(answer === 'metric') {
+            person.calculate_bmi('metric');
+            $('#display_value').html('Your BMI is ' + person.bmiValue);
+            $('#display_message').html('and you are '+ person.bmiMessage);
+            } else {
+            person.calculate_bmi('imperial');
+            $('#display_value').html('Your BMI is ' + person.bmiValue);
+            $('#display_message').html('and you are '+ person.bmiMessage);
+           }
         });
       });
     </script>
