@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-    p.round3 {
-    border: 2px solid red;
-    border-radius: 12px;
-    }
-    </style>
     <meta charset="utf-8">
     <title> BMI Calculator - Welcome </title>
     <script src="src/person.js"></script>
@@ -16,42 +10,38 @@
   </head>
   <body>
 
-    <p class="round3"><h1 style="color:white;">BMI Calculator</h1></p>
-    <p class="round3"> Please enter your height and weight and choose your units: </p>
+    <!--HERO SECTION -->
+    <section class="hero">
+      <div class="wrap">
+        <h1>BMI Calculator</h1>
+        <p>Please enter your height and weight and choose your units:</p>
+      </div>
+    </section>
 
-    <form>
-      <input type="text" id="weight" placeholder="Weight">
-      <input type="text" id="height" placeholder="Height">
-      <input type="button" id="calculate" value="Calculate">
-    </form>
+    <!--MAIN-->
+    <section class="main">
+      <div class="wrap grid-x grid-margin-x">
+        <div class="medium-6 small-1 cell">
+          <h2> There is stuff here</h2>
+          <form>
+            <input type="text" id="weight" placeholder="Weight">
+            <input type="text" id="height" placeholder="Height">
+            <input type="button" id="calculate" value="Calculate">
+          </form>
+          <br/>
+          <button id="imperial" class = "button" >Imperial</button>
+          <button id="metric" class = "button" >Metric</button>
 
-    <button id="imperial">Imperial</button>
-    <button id="metric">Metric</button>
+          <div>
+            <br />
+            <span id="display_value"></span>
+            <span id="display_message"></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div>
-      <span id="display_value"></span>
-      <span id="display_message"></span>
-    </div>
 
-    <!-- <script type="text/javascript">
-      $(document).ready(function () {
-        $('#imperial').click(function () {
-          var w = parseFloat($('#weight').val());
-          var h = parseFloat($('#height').val());
-          var person = new Person({weight: w, height: h});
-          var answer = document.getElementById('dropdown-selection').value;
-           if(answer === 'metric') {
-            person.calculate_bmi('metric');
-            $('#display_value').html('Your BMI is ' + person.bmiValue);
-            $('#display_message').html('and you are '+ person.bmiMessage);
-            } else {
-            person.calculate_bmi('imperial');
-            $('#display_value').html('Your BMI is ' + person.bmiValue);
-            $('#display_message').html('and you are '+ person.bmiMessage);
-           }
-        });
-      });
-    </script> -->
 
     <script type="text/javascript">
       $(document).ready(function () {
@@ -66,6 +56,7 @@
           });
         });
       });
+
       $(document).ready(function () {
         $('#metric').click(function(){
           $('#calculate').click(function () {
@@ -78,7 +69,6 @@
           });
         });
       });
-
     </script>
   </body>
 </html>

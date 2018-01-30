@@ -1,23 +1,85 @@
+/*************************
+GENERAL
+*************************/
 html {
   font-family: verdana;
-  /* 1 */
   line-height: 1.15;
-  /* 2 */
   -ms-text-size-adjust: 100%;
-  /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+ }
 
-  body {
-      background-color: purple;
-  }
+.wrap{
+  width: 90%;
+  margin: 0px auto;
+}
 
-  h1 {
-      color: white;
-      text-align: center;
-  }
+/*************************
+NAV-DESKTOP
+*************************/
+.nav-desktop{
+  background-color: grey;
+  height: 60px;
+}
 
-  p.round3 {
-      border: 2px solid white;
-      border-radius: 12px;
-  }
+.site-logo{
+  color: white;
+  font-size: 35px;
+}
+
+.site-logo:visited{
+  color: White;
+  font-size: 35px;
+}
+
+/*************************
+HERO
+*************************/
+.hero{
+  margin: 40px 300px;
+  background: purple;
+  padding: 50px 0px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+
+/*************************
+MAIN
+*************************/
+.main{
+  text-align:center;
+  margin: 0px 300px;
+  background-color: purple;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 10px 0px 20px 0px;
+
+}
+
+.button:active{
+  background:olive;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+/*************************
+FOOTER
+*************************/
+footer{
+  background-color: gray;
+  padding: 50px 0px;
+}
+
+footer a{
+  display: block;
+}
+
+<style>
+p.round3 {
+border: 2px solid red;
+border-radius: 12px;
+}
+</style>
