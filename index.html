@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+    p.round3 {
+    border: 2px solid red;
+    border-radius: 12px;
+    }
+    </style>
     <meta charset="utf-8">
-    <title> BMI Calculator </title>
+    <title> BMI Calculator - Welcome </title>
     <script src="src/person.js"></script>
     <script src="src/bmi_calculator.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+    <p class="round3"><h1 style="color:white;">BMI Calculator</h1></p>
+    <p class="round3"> Please enter your height and weight and choose your units: </p>
+
     <form>
       <input type="text" id="weight" placeholder="Weight">
       <input type="text" id="height" placeholder="Height">
@@ -67,6 +78,7 @@
           });
         });
       });
+
     </script>
   </body>
 </html>

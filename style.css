@@ -1,0 +1,23 @@
+html {
+  font-family: verdana;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+  body {
+      background-color: purple;
+  }
+
+  h1 {
+      color: white;
+      text-align: center;
+  }
+
+  p.round3 {
+      border: 2px solid white;
+      border-radius: 12px;
+  }
