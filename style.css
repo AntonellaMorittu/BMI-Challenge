@@ -35,12 +35,17 @@ NAV-DESKTOP
 HERO
 *************************/
 .hero{
-  margin: 40px 300px;
+  margin: 20px 300px;
   background: purple;
   padding: 50px 0px;
-  height: 80px;
+  height: 130px;
   border: 2px solid white;
   border-radius: 12px;
+}
+p {
+  font-size: 1.5em;
+  text-align:center;
+  color: pink;
 }
 
 /*************************
@@ -48,22 +53,40 @@ MAIN
 *************************/
 .main{
   text-align:center;
-  margin: 0px 300px;
+  color: white;
+  font-size: 0.80em;
+  font-family: sans-serif;
+  margin: 10px 300px;
   background-color: purple;
   border: 2px solid white;
   border-radius: 12px;
-  padding: 10px 0px 20px 0px;
+  padding: 50px 0px 20px 0px;
+  height: 160px;
 
 }
 
 .button:active{
-  background:olive;
+  background:purple;
+  cursor:pointer;
+  transition-duration: 0.4s;
+}
+.button{
+  background-color: #f44336;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
 }
 
 h1 {
     color: white;
     text-align: center;
 }
+
 
 /*************************
 FOOTER
