@@ -47,7 +47,11 @@ HERO
 }
 
 #imperial {
-  margin: 0px 0 0 35px;
+  margin: 20px 0 0 18px;
+}
+
+#metric {
+  margin: 20px 0 0 5px;
 }
 
 form {
@@ -61,6 +65,14 @@ border: solid;
 
 }
 
+#weight {
+  margin: 0px 0 0 8px;
+}
+
+#height {
+  margin: 0px 0 0 8px;
+}
+
 button.active {
   background-color: white;
 }
@@ -72,7 +84,7 @@ button.active {
 
 #calculate {
   padding: 10px;
-  margin: 15px 0 0 50px;
+  margin: 20px 0 0 55px;
 }
 
 p {
