@@ -19,6 +19,6 @@ The aim of this project was to practice using Javascript, jQuery, Bootstrap, and
 ## Usage
 
 * The website can be deployed and accessed through this link: https://antonellamorittu.github.io/BMI-Challenge/
-* Choose your units of measurement
-* Input and click calculate
+* Choose your units of measurement (Imperial or Metric)
+* Input values and click calculate
 * Refresh the page to reset form
