@@ -9,8 +9,9 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $('#imperial').click(function(){
-    $('#imperial').css('background-color', 'white');
-    $('#imperial').css('color', 'black');
+    $('#imperial').css('background-color', 'purple');
+    $('#imperial').css('color', 'white');
+    $('#imperial').css('font-style', 'italic');
     $('#metric').css('background-color', 'transparent');
     $('#metric').css('color', 'white');
     $('#weight').attr('placeholder','Weight in lbs');
@@ -30,8 +31,9 @@ $(document).ready(function () {
   $('#metric').click(function(){
     $('#imperial').css('background-color', 'transparent');
     $('#imperial').css('color', 'white');
-    $('#metric').css('background-color', 'white');
-    $('#metric').css('color', 'black');
+    $('#metric').css('background-color', 'purple');
+    $('#metric').css('color', 'white');
+    $('#metric').css('font-style', 'italic');
     $('#weight').attr('placeholder','Weight in kg');
     $('#height').attr('placeholder','Height in cm');
     $('#calculate').click(function () {

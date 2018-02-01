@@ -41,6 +41,11 @@ HERO
   margin-top: 100px;
 }
 
+.card-header:first-child{
+  background: purple;
+  color: white;
+}
+
 #imperial {
   margin: 0px 0 0 35px;
 }
