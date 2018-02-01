@@ -34,18 +34,33 @@ NAV-DESKTOP
 /*************************
 HERO
 *************************/
-.hero{
-  margin: 20px 300px;
-  background: purple;
-  padding: 50px 0px;
-  height: 130px;
-  border: 2px solid white;
-  border-radius: 12px;
+
+body {
+padding: 70px 500px 70px;
+
 }
+
+form {
+padding: 20px;
+}
+
+button, input {
+padding: 10px;
+border-radius: 5px;
+border: solid;
+
+}
+
+#calculate {
+  padding: 10px;
+  margin: 15px 0 0 50px;
+}
+
 p {
-  font-size: 1.5em;
+  font-size: 1em;
   text-align:center;
-  color: pink;
+  color: white;
+
 }
 
 /*************************
@@ -65,22 +80,6 @@ MAIN
 
 }
 
-.button:active{
-  background:purple;
-  cursor:pointer;
-  transition-duration: 0.4s;
-}
-.button{
-  background-color: #f44336;
-   border: none;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   cursor: pointer;
-}
 
 h1 {
     color: white;
