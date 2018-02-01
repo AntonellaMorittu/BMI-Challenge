@@ -34,10 +34,15 @@ NAV-DESKTOP
 /*************************
 HERO
 *************************/
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
 
-body {
-padding: 70px 500px 70px;
-
+#imperial {
+  margin: 0px 0 0 35px;
 }
 
 form {
@@ -49,6 +54,15 @@ padding: 10px;
 border-radius: 5px;
 border: solid;
 
+}
+
+button.active {
+  background-color: white;
+}
+
+.result {
+  margin-top: 15px;
+  text-align: center;
 }
 
 #calculate {
