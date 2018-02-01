@@ -1,0 +1,108 @@
+/*************************
+GENERAL
+*************************/
+html {
+  font-family: verdana;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+ }
+
+.wrap{
+  width: 90%;
+  margin: 0px auto;
+}
+
+/*************************
+NAV-DESKTOP
+*************************/
+.nav-desktop{
+  background-color: grey;
+  height: 60px;
+}
+
+.site-logo{
+  color: white;
+  font-size: 35px;
+}
+
+.site-logo:visited{
+  color: White;
+  font-size: 35px;
+}
+
+/*************************
+HERO
+*************************/
+.hero{
+  margin: 20px 300px;
+  background: purple;
+  padding: 50px 0px;
+  height: 130px;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+p {
+  font-size: 1.5em;
+  text-align:center;
+  color: pink;
+}
+
+/*************************
+MAIN
+*************************/
+.main{
+  text-align:center;
+  color: white;
+  font-size: 0.80em;
+  font-family: sans-serif;
+  margin: 10px 300px;
+  background-color: purple;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 50px 0px 20px 0px;
+  height: 160px;
+
+}
+
+.button:active{
+  background:purple;
+  cursor:pointer;
+  transition-duration: 0.4s;
+}
+.button{
+  background-color: #f44336;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+/*************************
+FOOTER
+*************************/
+footer{
+  background-color: gray;
+  padding: 50px 0px;
+}
+
+footer a{
+  display: block;
+}
+
+<style>
+p.round3 {
+border: 2px solid red;
+border-radius: 12px;
+}
+</style>
