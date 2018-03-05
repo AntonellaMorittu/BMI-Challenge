@@ -46,23 +46,3 @@ $(document).ready(function () {
     });
   });
 });
-
-    // <!-- <script type="text/javascript">
-    //   $(document).ready(function () {
-    //     $('#imperial').click(function () {
-    //       var w = parseFloat($('#weight').val());
-    //       var h = parseFloat($('#height').val());
-    //       var person = new Person({weight: w, height: h});
-    //       var answer = document.getElementById('dropdown-selection').value;
-    //        if(answer === 'metric') {
-    //         person.calculate_bmi('metric');
-    //         $('#display_value').html('Your BMI is ' + person.bmiValue);
-    //         $('#display_message').html('and you are '+ person.bmiMessage);
-    //         } else {
-    //         person.calculate_bmi('imperial');
-    //         $('#display_value').html('Your BMI is ' + person.bmiValue);
-    //         $('#display_message').html('and you are '+ person.bmiMessage);
-    //        }
-    //     });
-    //   });
-    // </script> -->
